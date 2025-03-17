@@ -30,7 +30,7 @@ def recommend(movie):
 
 
 # API endpoint to get movie recommendations
-@app.route('/recommend', methods=['GET'])
+@app.route('/recommend', methods=['POST'])
 def api_recommend():
     # Get the movie title from the query parameters
     movie = request.args.get('movie')
